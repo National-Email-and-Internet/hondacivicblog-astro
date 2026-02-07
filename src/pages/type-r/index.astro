@@ -9,7 +9,7 @@ const typeRGenerations = [
     engine: 'B16B',
     power: '185 hp @ 8200 RPM',
     weight: '2,425 lbs',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Honda_Civic_Type_R_EK9_Mugen_010.JPG/640px-Honda_Civic_Type_R_EK9_Mugen_010.JPG',
+    image: '/images/type-r/ek9.jpg',
     highlights: ['First Civic Type R', 'Hand-ported B16B', 'Helical LSD', 'Championship White'],
   },
   {
@@ -19,7 +19,7 @@ const typeRGenerations = [
     engine: 'K20A',
     power: '212 hp @ 8000 RPM',
     weight: '2,679 lbs',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Honda_Civic_TypeR_EP3.jpg/640px-Honda_Civic_TypeR_EP3.jpg',
+    image: null,
     highlights: ['K-series debut', 'Individual throttle bodies', '6-speed manual', 'Recaro seats'],
   },
   {
@@ -29,7 +29,7 @@ const typeRGenerations = [
     engine: 'K20A',
     power: '225 hp @ 8000 RPM',
     weight: '2,888 lbs',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/2009_Honda_Civic_Si_sedan_--_03-21-2012.JPG/640px-2009_Honda_Civic_Si_sedan_--_03-21-2012.JPG',
+    image: null,
     highlights: ['JDM-only sedan', 'Most refined NA Type R', 'Brembo brakes', 'Benchmark handling'],
   },
   {
@@ -39,7 +39,7 @@ const typeRGenerations = [
     engine: 'K20C1',
     power: '306 hp @ 6500 RPM',
     weight: '3,064 lbs',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Honda_Civic_Type_R_%282017%29_1X7A0088.jpg/640px-Honda_Civic_Type_R_%282017%29_1X7A0088.jpg',
+    image: null,
     highlights: ['First turbo Type R', 'Nürburgring record', 'Europe only', '+R mode'],
   },
   {
@@ -49,7 +49,7 @@ const typeRGenerations = [
     engine: 'K20C1',
     power: '306 hp @ 6500 RPM',
     weight: '3,117 lbs',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Honda_Civic_Type_R_%282017%29_1X7A0088.jpg/640px-Honda_Civic_Type_R_%282017%29_1X7A0088.jpg',
+    image: null,
     highlights: ['First US Type R', 'Adaptive dampers', 'Nürburgring record (7:43.8)', 'Limited Edition variant'],
   },
   {
@@ -59,7 +59,7 @@ const typeRGenerations = [
     engine: 'K20C1',
     power: '315 hp @ 6500 RPM',
     weight: '3,118 lbs',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/2023_Honda_Civic_Type_R_%28FL5%29%2C_front_4.8.23.jpg/640px-2023_Honda_Civic_Type_R_%28FL5%29%2C_front_4.8.23.jpg',
+    image: null,
     highlights: ['Most powerful ever', 'Cleaner design', 'Improved cooling', 'Track-focused'],
   },
 ];
@@ -73,9 +73,9 @@ const typeRGenerations = [
   <section class="relative bg-honda-dark text-white py-24 overflow-hidden">
     <div class="absolute inset-0 z-0">
       <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Honda_Civic_Type_R_%282017%29_1X7A0088.jpg/640px-Honda_Civic_Type_R_%282017%29_1X7A0088.jpg" 
+        src="/images/type-r/ek9.jpg" 
         alt="Honda Civic Type R"
-        class="w-full h-full object-cover opacity-40"
+        class="w-full h-full object-cover opacity-30"
       />
       <div class="absolute inset-0 bg-gradient-to-t from-honda-dark via-honda-dark/70 to-transparent"></div>
     </div>
@@ -106,12 +106,18 @@ const typeRGenerations = [
             i % 2 === 1 ? "md:flex-row-reverse" : ""
           ]}>
             <div class="md:w-1/2">
-              <img 
-                src={model.image} 
-                alt={model.name}
-                class="rounded-2xl shadow-lg w-full"
-                loading="lazy"
-              />
+              {model.image ? (
+                <img 
+                  src={model.image} 
+                  alt={model.name}
+                  class="rounded-2xl shadow-lg w-full"
+                  loading="lazy"
+                />
+              ) : (
+                <div class="bg-gradient-to-br from-primary to-red-700 rounded-2xl shadow-lg w-full aspect-video flex items-center justify-center">
+                  <span class="font-heading font-black text-4xl text-white/90">{model.name}</span>
+                </div>
+              )}
             </div>
             <div class="md:w-1/2">
               <span class="text-sm text-gray-500">{model.gen} • {model.years}</span>
