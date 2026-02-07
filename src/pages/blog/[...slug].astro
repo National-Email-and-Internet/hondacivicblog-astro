@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Comments from '../../components/Comments.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -94,6 +95,13 @@ const formattedDate = post.data.pubDate.toLocaleDateString('en-US', {
         </div>
       </footer>
     )}
+
+    <!-- Comments -->
+    <div class="py-8">
+      <div class="max-w-4xl mx-auto px-4">
+        <Comments pageId={post.slug} pageTitle={post.data.title} />
+      </div>
+    </div>
   </article>
 
   <!-- Back to Blog -->
