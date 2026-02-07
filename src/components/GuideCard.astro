@@ -1,0 +1,36 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  href: string;
+  category: string;
+  image: string;
+  overlayText?: string;
+}
+
+const { title, description, href, category, image, overlayText } = Astro.props;
+---
+
+<a href={href} class="group">
+  <article class="bg-white dark:bg-honda-gray rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition">
+    <div class="h-40 relative overflow-hidden">
+      <img 
+        src={image} 
+        alt={title} 
+        class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+        loading="lazy"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      {overlayText && (
+        <span class="absolute bottom-3 left-3 text-white/80 font-heading font-black text-2xl uppercase">
+          {overlayText}
+        </span>
+      )}
+    </div>
+    <div class="p-5">
+      <span class="text-xs font-medium text-primary uppercase">{category}</span>
+      <h3 class="font-semibold text-lg mt-1 mb-2 group-hover:text-primary transition">{title}</h3>
+      <p class="text-gray-500 dark:text-gray-400 text-sm line-clamp-2">{description}</p>
+    </div>
+  </article>
+</a>

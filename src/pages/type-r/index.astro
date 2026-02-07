@@ -1,0 +1,196 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const typeRGenerations = [
+  {
+    name: 'EK9 Type R',
+    years: '1997-2000',
+    gen: '6th Gen',
+    engine: 'B16B',
+    power: '185 hp @ 8200 RPM',
+    weight: '2,425 lbs',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Honda_Civic_Type_R_EK9_Mugen_010.JPG/640px-Honda_Civic_Type_R_EK9_Mugen_010.JPG',
+    highlights: ['First Civic Type R', 'Hand-ported B16B', 'Helical LSD', 'Championship White'],
+  },
+  {
+    name: 'EP3 Type R',
+    years: '2001-2005',
+    gen: '7th Gen',
+    engine: 'K20A',
+    power: '212 hp @ 8000 RPM',
+    weight: '2,679 lbs',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Honda_Civic_TypeR_EP3.jpg/640px-Honda_Civic_TypeR_EP3.jpg',
+    highlights: ['K-series debut', 'Individual throttle bodies', '6-speed manual', 'Recaro seats'],
+  },
+  {
+    name: 'FD2 Type R',
+    years: '2007-2011',
+    gen: '8th Gen',
+    engine: 'K20A',
+    power: '225 hp @ 8000 RPM',
+    weight: '2,888 lbs',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/2009_Honda_Civic_Si_sedan_--_03-21-2012.JPG/640px-2009_Honda_Civic_Si_sedan_--_03-21-2012.JPG',
+    highlights: ['JDM-only sedan', 'Most refined NA Type R', 'Brembo brakes', 'Benchmark handling'],
+  },
+  {
+    name: 'FK2 Type R',
+    years: '2015-2016',
+    gen: '9th Gen',
+    engine: 'K20C1',
+    power: '306 hp @ 6500 RPM',
+    weight: '3,064 lbs',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Honda_Civic_Type_R_%282017%29_1X7A0088.jpg/640px-Honda_Civic_Type_R_%282017%29_1X7A0088.jpg',
+    highlights: ['First turbo Type R', 'Nürburgring record', 'Europe only', '+R mode'],
+  },
+  {
+    name: 'FK8 Type R',
+    years: '2017-2021',
+    gen: '10th Gen',
+    engine: 'K20C1',
+    power: '306 hp @ 6500 RPM',
+    weight: '3,117 lbs',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Honda_Civic_Type_R_%282017%29_1X7A0088.jpg/640px-Honda_Civic_Type_R_%282017%29_1X7A0088.jpg',
+    highlights: ['First US Type R', 'Adaptive dampers', 'Nürburgring record (7:43.8)', 'Limited Edition variant'],
+  },
+  {
+    name: 'FL5 Type R',
+    years: '2022-Present',
+    gen: '11th Gen',
+    engine: 'K20C1',
+    power: '315 hp @ 6500 RPM',
+    weight: '3,118 lbs',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/2023_Honda_Civic_Type_R_%28FL5%29%2C_front_4.8.23.jpg/640px-2023_Honda_Civic_Type_R_%28FL5%29%2C_front_4.8.23.jpg',
+    highlights: ['Most powerful ever', 'Cleaner design', 'Improved cooling', 'Track-focused'],
+  },
+];
+---
+
+<BaseLayout 
+  title="Honda Civic Type R" 
+  description="The complete history of Honda Civic Type R from the legendary EK9 to today's FL5."
+>
+  <!-- Hero -->
+  <section class="relative bg-honda-dark text-white py-24 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Honda_Civic_Type_R_%282017%29_1X7A0088.jpg/640px-Honda_Civic_Type_R_%282017%29_1X7A0088.jpg" 
+        alt="Honda Civic Type R"
+        class="w-full h-full object-cover opacity-40"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-honda-dark via-honda-dark/70 to-transparent"></div>
+    </div>
+    
+    <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
+      <span class="inline-block bg-primary text-white px-4 py-1 rounded-full text-sm font-bold mb-4">
+        THE LEGEND
+      </span>
+      <h1 class="font-heading font-black text-5xl md:text-7xl mb-4">
+        Type <span class="text-primary">R</span>
+      </h1>
+      <p class="text-gray-300 text-xl max-w-2xl mx-auto">
+        Born on the track. Built without compromise. 
+        The ultimate expression of Honda's racing spirit.
+      </p>
+    </div>
+  </section>
+
+  <!-- Type R Timeline -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="font-heading font-bold text-3xl text-center mb-12">Every Generation</h2>
+      
+      <div class="space-y-12">
+        {typeRGenerations.map((model, i) => (
+          <div class:list={[
+            "flex flex-col md:flex-row gap-8 items-center",
+            i % 2 === 1 ? "md:flex-row-reverse" : ""
+          ]}>
+            <div class="md:w-1/2">
+              <img 
+                src={model.image} 
+                alt={model.name}
+                class="rounded-2xl shadow-lg w-full"
+                loading="lazy"
+              />
+            </div>
+            <div class="md:w-1/2">
+              <span class="text-sm text-gray-500">{model.gen} • {model.years}</span>
+              <h3 class="font-heading font-bold text-2xl md:text-3xl mt-1 mb-4">{model.name}</h3>
+              
+              <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="bg-gray-100 dark:bg-honda-gray p-4 rounded-lg">
+                  <div class="text-sm text-gray-500">Engine</div>
+                  <div class="font-mono font-bold text-primary">{model.engine}</div>
+                </div>
+                <div class="bg-gray-100 dark:bg-honda-gray p-4 rounded-lg">
+                  <div class="text-sm text-gray-500">Power</div>
+                  <div class="font-bold">{model.power.split('@')[0]}</div>
+                </div>
+              </div>
+              
+              <ul class="space-y-2">
+                {model.highlights.map(highlight => (
+                  <li class="flex items-center gap-2">
+                    <span class="text-primary">✓</span>
+                    <span>{highlight}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats -->
+  <section class="py-16 bg-primary text-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="font-heading font-black text-4xl md:text-5xl">6</div>
+          <div class="text-white/80">Generations</div>
+        </div>
+        <div>
+          <div class="font-heading font-black text-4xl md:text-5xl">315</div>
+          <div class="text-white/80">Max HP</div>
+        </div>
+        <div>
+          <div class="font-heading font-black text-4xl md:text-5xl">25+</div>
+          <div class="text-white/80">Years of History</div>
+        </div>
+        <div>
+          <div class="font-heading font-black text-4xl md:text-5xl">7:43</div>
+          <div class="text-white/80">'Ring Lap Record</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-heading font-bold text-2xl mb-6">Learn More</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a 
+          href="/engines/"
+          class="bg-gray-100 dark:bg-honda-gray px-6 py-3 rounded-lg hover:shadow-lg transition"
+        >
+          K-Series Engines
+        </a>
+        <a 
+          href="/generations/"
+          class="bg-gray-100 dark:bg-honda-gray px-6 py-3 rounded-lg hover:shadow-lg transition"
+        >
+          All Generations
+        </a>
+        <a 
+          href="/blog/"
+          class="bg-gray-100 dark:bg-honda-gray px-6 py-3 rounded-lg hover:shadow-lg transition"
+        >
+          Type R Articles
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

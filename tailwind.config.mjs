@@ -17,7 +17,34 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         heading: ['Montserrat', 'system-ui', 'sans-serif'],
       },
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            '--tw-prose-links': theme('colors.primary'),
+            '--tw-prose-headings': theme('colors.gray.900'),
+            'a': {
+              textDecoration: 'none',
+              '&:hover': {
+                textDecoration: 'underline',
+              },
+            },
+            'h1, h2, h3, h4': {
+              fontFamily: theme('fontFamily.heading').join(', '),
+              fontWeight: '700',
+            },
+          },
+        },
+        invert: {
+          css: {
+            '--tw-prose-headings': theme('colors.white'),
+            '--tw-prose-body': theme('colors.gray.300'),
+            '--tw-prose-bold': theme('colors.white'),
+          },
+        },
+      }),
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };

@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+const formattedDate = post.data.pubDate.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<BaseLayout 
+  title={post.data.title}
+  description={post.data.description}
+  image={post.data.featuredImage || undefined}
+>
+  <!-- Article Header -->
+  <article>
+    <header class="bg-honda-dark text-white py-16">
+      <div class="max-w-4xl mx-auto px-4">
+        <nav class="text-sm text-gray-400 mb-4">
+          <a href="/" class="hover:text-white transition">Home</a>
+          <span class="mx-2">/</span>
+          <a href="/blog/" class="hover:text-white transition">Blog</a>
+        </nav>
+        
+        {post.data.categories && post.data.categories.length > 0 && (
+          <div class="flex gap-2 mb-4">
+            {post.data.categories.map(cat => (
+              <span class="text-xs bg-primary text-white px-3 py-1 rounded-full uppercase">
+                {cat}
+              </span>
+            ))}
+          </div>
+        )}
+        
+        <h1 class="font-heading font-black text-3xl md:text-4xl mb-4">
+          {post.data.title}
+        </h1>
+        
+        <time 
+          datetime={post.data.pubDate.toISOString()}
+          class="text-gray-400"
+        >
+          {formattedDate}
+        </time>
+      </div>
+    </header>
+
+    <!-- Featured Image -->
+    {post.data.featuredImage && (
+      <div class="max-w-4xl mx-auto px-4 -mt-8 relative z-10">
+        <img 
+          src={post.data.featuredImage} 
+          alt={post.data.title}
+          class="w-full rounded-xl shadow-lg"
+        />
+      </div>
+    )}
+
+    <!-- Content -->
+    <div class="py-12">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="prose prose-lg dark:prose-invert max-w-none prose-headings:font-heading prose-headings:font-bold prose-a:text-primary prose-img:rounded-xl">
+          <Content />
+        </div>
+      </div>
+    </div>
+
+    <!-- Tags -->
+    {post.data.tags && post.data.tags.length > 0 && (
+      <footer class="border-t border-gray-200 dark:border-gray-700 py-8">
+        <div class="max-w-4xl mx-auto px-4">
+          <div class="flex flex-wrap gap-2">
+            <span class="text-gray-500 mr-2">Tags:</span>
+            {post.data.tags.map(tag => (
+              <span class="text-sm bg-gray-100 dark:bg-honda-gray px-3 py-1 rounded-full">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      </footer>
+    )}
+  </article>
+
+  <!-- Back to Blog -->
+  <div class="py-8 bg-gray-100 dark:bg-honda-gray">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <a 
+        href="/blog/" 
+        class="inline-flex items-center gap-2 text-primary hover:underline"
+      >
+        <span>←</span>
+        Back to Blog
+      </a>
+    </div>
+  </div>
+</BaseLayout>

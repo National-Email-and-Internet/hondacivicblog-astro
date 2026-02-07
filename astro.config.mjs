@@ -4,5 +4,13 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://hondacivicblog.com',
-  integrations: [tailwind(), sitemap()],
+  integrations: [
+    tailwind(),
+    sitemap(),
+  ],
+  markdown: {
+    shikiConfig: {
+      theme: 'github-dark',
+    },
+  },
 });

@@ -1,0 +1,54 @@
+---
+interface Props {
+  generation: number;
+  years: string;
+  href: string;
+  isCurrent?: boolean;
+}
+
+const { generation, years, href, isCurrent = false } = Astro.props;
+
+const ordinal = (n: number) => {
+  const s = ['th', 'st', 'nd', 'rd'];
+  const v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
+};
+---
+
+<a 
+  href={href} 
+  class:list={[
+    "group rounded-xl p-4 text-center transition border-2",
+    "hover:shadow-lg hover:shadow-primary/20 hover:border-primary",
+    isCurrent 
+      ? "bg-primary text-white border-primary" 
+      : "bg-gray-50 dark:bg-honda-dark border-transparent"
+  ]}
+>
+  <div 
+    class:list={[
+      "w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 transition",
+      isCurrent 
+        ? "bg-white/20" 
+        : "bg-primary/10 group-hover:bg-primary group-hover:text-white"
+    ]}
+  >
+    <span 
+      class:list={[
+        "font-bold",
+        isCurrent ? "text-white" : "text-primary group-hover:text-white"
+      ]}
+    >
+      {generation}
+    </span>
+  </div>
+  <div class="font-semibold text-sm">{ordinal(generation)} Gen</div>
+  <div 
+    class:list={[
+      "text-xs",
+      isCurrent ? "opacity-80" : "text-gray-500"
+    ]}
+  >
+    {years}
+  </div>
+</a>

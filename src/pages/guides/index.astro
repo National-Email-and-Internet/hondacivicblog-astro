@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GuideCard from '../../components/GuideCard.astro';
+import { getCollection } from 'astro:content';
+
+// Get all guides and DIY posts from blog
+const blogPosts = await getCollection('blog');
+const guides = blogPosts.filter(post => 
+  post.data.categories?.includes('diy-projects') ||
+  post.data.categories?.includes('tuning') ||
+  post.data.categories?.includes('parts')
+);
+
+const sortedGuides = guides.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Featured guides (manual selection of key content)
+const featuredGuides = [
+  {
+    title: 'The Guide to VTEC',
+    description: 'How VTEC works and why it matters for performance',
+    href: '/blog/the-guide-to-vtec/',
+    category: 'Explainer',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Honda_Civic_Si_Coupe.jpg/640px-Honda_Civic_Si_Coupe.jpg',
+    overlayText: 'VTEC'
+  },
+  {
+    title: 'Building a Custom Turbo Kit',
+    description: 'Step-by-step guide to building your own turbo setup',
+    href: '/blog/custom-turbo-kit-project/',
+    category: 'DIY Project',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Honda_Civic_Type_R_%282017%29_1X7A0088.jpg/640px-Honda_Civic_Type_R_%282017%29_1X7A0088.jpg',
+    overlayText: 'TURBO'
+  },
+  {
+    title: 'B-Series Swap Information',
+    description: 'Everything you need to know about B-series swaps',
+    href: '/blog/h2bf2b-swap-information/',
+    category: 'Engine Swap',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2022_Honda_Civic_Sedan_EX_in_Platinum_White_Pearl%2C_front_left.jpg/640px-2022_Honda_Civic_Sedan_EX_in_Platinum_White_Pearl%2C_front_left.jpg',
+    overlayText: 'B-SERIES'
+  },
+];
+---
+
+<BaseLayout 
+  title="DIY Guides" 
+  description="Step-by-step tutorials for Honda Civic modifications, engine swaps, and performance builds."
+>
+  <!-- Hero -->
+  <section class="bg-honda-dark text-white py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="font-heading font-black text-4xl md:text-5xl mb-4">DIY Guides</h1>
+      <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+        From basic maintenance to full engine swaps, our guides help you build and maintain your Honda Civic.
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Guides -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="font-heading font-bold text-2xl mb-8">Featured Guides</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {featuredGuides.map(guide => (
+          <GuideCard {...guide} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- All Guides -->
+  {sortedGuides.length > 0 && (
+    <section class="py-16 bg-gray-100 dark:bg-honda-gray">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="font-heading font-bold text-2xl mb-8">All DIY Content</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {sortedGuides.map(post => (
+            <GuideCard 
+              title={post.data.title}
+              description={post.data.description || ''}
+              href={`/blog/${post.slug}/`}
+              category={post.data.categories?.[0] || 'Guide'}
+              image={post.data.featuredImage || 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Honda_Civic_Type_R_%282017%29_1X7A0088.jpg/640px-Honda_Civic_Type_R_%282017%29_1X7A0088.jpg'}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Categories -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-heading font-bold text-2xl mb-8 text-center">Browse by Category</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <a 
+          href="/blog/?category=tuning"
+          class="bg-white dark:bg-honda-dark p-6 rounded-xl text-center hover:shadow-lg transition border border-gray-100 dark:border-gray-700"
+        >
+          <div class="text-3xl mb-2">⚡</div>
+          <div class="font-semibold">Tuning</div>
+        </a>
+        <a 
+          href="/blog/?category=diy-projects"
+          class="bg-white dark:bg-honda-dark p-6 rounded-xl text-center hover:shadow-lg transition border border-gray-100 dark:border-gray-700"
+        >
+          <div class="text-3xl mb-2">🔧</div>
+          <div class="font-semibold">DIY Projects</div>
+        </a>
+        <a 
+          href="/blog/?category=parts"
+          class="bg-white dark:bg-honda-dark p-6 rounded-xl text-center hover:shadow-lg transition border border-gray-100 dark:border-gray-700"
+        >
+          <div class="text-3xl mb-2">🔩</div>
+          <div class="font-semibold">Parts</div>
+        </a>
+        <a 
+          href="/engines/"
+          class="bg-white dark:bg-honda-dark p-6 rounded-xl text-center hover:shadow-lg transition border border-gray-100 dark:border-gray-700"
+        >
+          <div class="text-3xl mb-2">🏎️</div>
+          <div class="font-semibold">Engines</div>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

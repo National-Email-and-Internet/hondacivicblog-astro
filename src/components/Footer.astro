@@ -1,0 +1,78 @@
+---
+const currentYear = new Date().getFullYear();
+
+const footerLinks = {
+  generations: [
+    { href: '/generations/1st-gen-1973-1979/', label: '1st-6th Gen (Classic)' },
+    { href: '/generations/7th-gen-2001-2005/', label: '7th-8th Gen' },
+    { href: '/generations/9th-gen-2012-2015/', label: '9th-10th Gen' },
+    { href: '/generations/11th-gen-2022-present/', label: '11th Gen (Current)' },
+  ],
+  resources: [
+    { href: '/engines/', label: 'Engine Specs' },
+    { href: '/guides/', label: 'DIY Guides' },
+    { href: '/type-r/', label: 'Type R' },
+    { href: '/blog/', label: 'Blog Archive' },
+  ],
+  connect: [
+    { href: '/contact/', label: 'Contact' },
+    { href: '/about/', label: 'About' },
+    { href: '/privacy/', label: 'Privacy Policy' },
+  ],
+};
+---
+
+<footer class="bg-honda-dark text-white py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid md:grid-cols-4 gap-8 mb-8">
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center font-heading font-black text-xl">H</div>
+          <span class="font-heading font-bold text-xl">Honda Civic Blog</span>
+        </div>
+        <p class="text-gray-400 text-sm">Your complete resource for Honda Civic information since 2008.</p>
+      </div>
+      
+      <!-- Generations -->
+      <div>
+        <h4 class="font-semibold mb-4">Generations</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          {footerLinks.generations.map(link => (
+            <li>
+              <a href={link.href} class="hover:text-white transition">{link.label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      
+      <!-- Resources -->
+      <div>
+        <h4 class="font-semibold mb-4">Resources</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          {footerLinks.resources.map(link => (
+            <li>
+              <a href={link.href} class="hover:text-white transition">{link.label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      
+      <!-- Connect -->
+      <div>
+        <h4 class="font-semibold mb-4">Connect</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          {footerLinks.connect.map(link => (
+            <li>
+              <a href={link.href} class="hover:text-white transition">{link.label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+    
+    <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+      <p>&copy; {currentYear} Honda Civic Blog. Not affiliated with Honda Motor Co.</p>
+    </div>
+  </div>
+</footer>

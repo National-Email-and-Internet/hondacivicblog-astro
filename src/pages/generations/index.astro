@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const generations = await getCollection('generations');
+const sortedGenerations = generations.sort((a, b) => a.data.generation - b.data.generation);
+---
+
+<BaseLayout 
+  title="Honda Civic Generations" 
+  description="Explore 50 years of Honda Civic history across 11 generations, from the 1973 original to today's 11th generation."
+>
+  <!-- Hero -->
+  <section class="bg-honda-dark text-white py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="font-heading font-black text-4xl md:text-5xl mb-4">Civic Generations</h1>
+      <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+        50 years of evolution. From the original CVCC economy car to today's turbocharged Type R, 
+        explore every generation of the Honda Civic.
+      </p>
+    </div>
+  </section>
+
+  <!-- Generations Grid -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {sortedGenerations.map(gen => (
+          <a 
+            href={`/generations/${gen.slug}/`}
+            class="group bg-white dark:bg-honda-gray rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-gray-100 dark:border-gray-700"
+          >
+            <div class="h-48 relative overflow-hidden">
+              <img 
+                src={gen.data.image || 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Honda_Civic_Type_R_%282017%29_1X7A0088.jpg/640px-Honda_Civic_Type_R_%282017%29_1X7A0088.jpg'} 
+                alt={gen.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-4 left-4">
+                <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
+                  {gen.data.generation === 11 ? 'Current' : `Gen ${gen.data.generation}`}
+                </span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h2 class="font-heading font-bold text-xl mb-1 group-hover:text-primary transition">
+                {gen.data.title}
+              </h2>
+              <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">{gen.data.years}</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm line-clamp-2">
+                {gen.data.description}
+              </p>
+              {gen.data.highlights && gen.data.highlights.length > 0 && (
+                <ul class="mt-4 space-y-1">
+                  {gen.data.highlights.slice(0, 2).map(highlight => (
+                    <li class="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-2">
+                      <span class="text-primary">•</span>
+                      {highlight}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

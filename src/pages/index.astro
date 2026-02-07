@@ -1,17 +1,158 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GenerationCard from '../components/GenerationCard.astro';
+import QuickLinkCard from '../components/QuickLinkCard.astro';
+import GuideCard from '../components/GuideCard.astro';
+import { getCollection } from 'astro:content';
 
+// Get generations sorted by number
+const generations = await getCollection('generations');
+const sortedGenerations = generations.sort((a, b) => a.data.generation - b.data.generation);
+
+// Get recent blog posts
+const posts = await getCollection('blog');
+const recentPosts = posts
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Everything Honda Civic">
+  <!-- Hero -->
+  <section class="relative bg-honda-dark text-white py-20 overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://hondacivicblog.com/wp-content/uploads/2023/03/800px-CivicRS.jpg" 
+        alt="Honda Civic RS" 
+        class="w-full h-full object-cover opacity-50"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-honda-dark via-honda-dark/50 to-transparent"></div>
+    </div>
+    
+    <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
+      <h1 class="font-heading font-black text-4xl md:text-6xl mb-4">
+        Everything <span class="text-primary">Honda Civic</span>
+      </h1>
+      <p class="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
+        50 years of history, specs, guides, and community. Find your generation.
+      </p>
+      
+      <!-- Year Selector -->
+      <div class="bg-white/5 backdrop-blur rounded-2xl p-6 max-w-xl mx-auto border border-white/10">
+        <label class="block text-sm text-gray-400 mb-3">Select your Civic year</label>
+        <form action="/year/" method="get" class="flex gap-3">
+          <select 
+            name="year"
+            class="flex-1 bg-honda-dark border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-primary focus:outline-none"
+          >
+            {Array.from({ length: 52 }, (_, i) => 2025 - i).map(year => (
+              <option value={year}>{year}</option>
+            ))}
+          </select>
+          <button 
+            type="submit"
+            class="bg-primary hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-lg transition"
+          >
+            Go →
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Generation Timeline -->
+  <section class="py-16 bg-white dark:bg-honda-gray">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="font-heading font-bold text-2xl md:text-3xl text-center mb-2">Civic Generations</h2>
+      <p class="text-gray-500 dark:text-gray-400 text-center mb-10">50 years of evolution</p>
+      
+      <div class="relative">
+        <!-- Timeline Line -->
+        <div class="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-red-400 rounded-full transform -translate-y-1/2 z-0"></div>
+        
+        <!-- Generation Cards - First Row -->
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 relative z-10">
+          {sortedGenerations.slice(0, 6).map(gen => (
+            <GenerationCard 
+              generation={gen.data.generation}
+              years={gen.data.years}
+              href={`/generations/${gen.slug}/`}
+              isCurrent={gen.data.generation === 11}
+            />
+          ))}
+        </div>
+        
+        <!-- Second Row -->
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-4 max-w-4xl mx-auto relative z-10">
+          {sortedGenerations.slice(6).map(gen => (
+            <GenerationCard 
+              generation={gen.data.generation}
+              years={gen.data.years}
+              href={`/generations/${gen.slug}/`}
+              isCurrent={gen.data.generation === 11}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-6">
+        <QuickLinkCard 
+          title="Engine Reference"
+          description="K-series, B-series, D-series specs and swap guides"
+          href="/engines/"
+          linkText="Explore engines"
+          icon="engine"
+        />
+        <QuickLinkCard 
+          title="DIY Guides"
+          description="Turbo builds, engine swaps, suspension mods"
+          href="/guides/"
+          linkText="Start building"
+          icon="tools"
+        />
+        <QuickLinkCard 
+          title="Type R"
+          description="The legend. Performance specs, history, comparisons"
+          href="/type-r/"
+          linkText="Feel the power"
+          icon="bolt"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Posts -->
+  {recentPosts.length > 0 && (
+    <section class="py-16 bg-gray-100 dark:bg-honda-dark">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="font-heading font-bold text-2xl md:text-3xl mb-8">Latest Articles</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {recentPosts.map(post => (
+            <GuideCard 
+              title={post.data.title}
+              description={post.data.description || ''}
+              href={`/blog/${post.slug}/`}
+              category={post.data.categories?.[0] || 'Article'}
+              image={post.data.featuredImage || 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Honda_Civic_Type_R_%282017%29_1X7A0088.jpg/640px-Honda_Civic_Type_R_%282017%29_1X7A0088.jpg'}
+            />
+          ))}
+        </div>
+        
+        <div class="text-center mt-8">
+          <a 
+            href="/blog/" 
+            class="inline-block bg-primary hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-lg transition"
+          >
+            View All Articles →
+          </a>
+        </div>
+      </div>
+    </section>
+  )}
+</BaseLayout>

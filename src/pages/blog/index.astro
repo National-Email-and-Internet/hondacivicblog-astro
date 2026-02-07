@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Group by year
+const postsByYear = sortedPosts.reduce((acc, post) => {
+  const year = post.data.pubDate.getFullYear();
+  if (!acc[year]) acc[year] = [];
+  acc[year].push(post);
+  return acc;
+}, {} as Record<number, typeof sortedPosts>);
+
+const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
+---
+
+<BaseLayout 
+  title="Blog" 
+  description="Articles, news, and updates about Honda Civic. Explore our archive of posts dating back to 2008."
+>
+  <!-- Hero -->
+  <section class="bg-honda-dark text-white py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="font-heading font-black text-4xl md:text-5xl mb-4">Blog Archive</h1>
+      <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+        {sortedPosts.length} articles about Honda Civic, from DIY guides to industry news.
+      </p>
+    </div>
+  </section>
+
+  <!-- Posts by Year -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      {years.map(year => (
+        <div class="mb-12">
+          <h2 class="font-heading font-bold text-2xl mb-6 text-gray-400">{year}</h2>
+          <div class="space-y-4">
+            {postsByYear[Number(year)].map(post => (
+              <a 
+                href={`/blog/${post.slug}/`}
+                class="block group bg-white dark:bg-honda-gray rounded-xl p-6 shadow-sm hover:shadow-lg transition border border-gray-100 dark:border-gray-700"
+              >
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                  <time 
+                    datetime={post.data.pubDate.toISOString()}
+                    class="text-sm text-gray-500 dark:text-gray-400 shrink-0"
+                  >
+                    {post.data.pubDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                  </time>
+                  <div class="flex-1">
+                    <h3 class="font-semibold text-lg group-hover:text-primary transition line-clamp-1">
+                      {post.data.title}
+                    </h3>
+                    {post.data.description && (
+                      <p class="text-gray-500 dark:text-gray-400 text-sm mt-1 line-clamp-1">
+                        {post.data.description}
+                      </p>
+                    )}
+                  </div>
+                  {post.data.categories && post.data.categories.length > 0 && (
+                    <div class="flex gap-2 shrink-0">
+                      <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                        {post.data.categories[0]}
+                      </span>
+                    </div>
+                  )}
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

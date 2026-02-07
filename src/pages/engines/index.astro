@@ -1,0 +1,141 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const engineSeries = [
+  {
+    name: 'K-Series',
+    description: 'Modern DOHC engines with i-VTEC, used in performance Civics since 2001',
+    engines: [
+      { code: 'K20A', power: '200-220 hp', years: '2001-2006', notes: 'Type R engine' },
+      { code: 'K20A2', power: '200 hp', years: '2002-2004', notes: 'RSX Type-S / Euro Type R' },
+      { code: 'K20A3', power: '155 hp', years: '2002-2005', notes: 'Civic Si (EP3)' },
+      { code: 'K20Z3', power: '197 hp', years: '2006-2011', notes: 'Civic Si (FG2/FA5)' },
+      { code: 'K20C1', power: '306-315 hp', years: '2017-present', notes: 'Turbo Type R' },
+      { code: 'K24Z7', power: '201 hp', years: '2012-2015', notes: 'Civic Si (9th gen)' },
+    ]
+  },
+  {
+    name: 'B-Series',
+    description: 'Legendary high-revving DOHC VTEC engines that defined 90s Honda performance',
+    engines: [
+      { code: 'B16A', power: '158-170 hp', years: '1989-2000', notes: 'JDM SiR' },
+      { code: 'B16A2', power: '160 hp', years: '1999-2000', notes: 'Civic Si (EM1)' },
+      { code: 'B16B', power: '185 hp', years: '1997-2000', notes: 'Type R (EK9)' },
+      { code: 'B18C1', power: '170 hp', years: '1994-2001', notes: 'Integra GS-R' },
+      { code: 'B18C5', power: '195 hp', years: '1997-2001', notes: 'Integra Type R' },
+    ]
+  },
+  {
+    name: 'D-Series',
+    description: 'Reliable SOHC economy engines, some with VTEC for efficiency or performance',
+    engines: [
+      { code: 'D15B', power: '130 hp', years: '1991-1999', notes: 'VTEC (JDM)' },
+      { code: 'D15B7', power: '102 hp', years: '1992-1995', notes: 'Civic DX/LX' },
+      { code: 'D16Z6', power: '125 hp', years: '1992-1995', notes: 'Civic EX/Si (VTEC)' },
+      { code: 'D16Y8', power: '127 hp', years: '1996-2000', notes: 'Civic EX (VTEC)' },
+      { code: 'D17A2', power: '127 hp', years: '2001-2005', notes: 'Civic EX (VTEC)' },
+    ]
+  },
+  {
+    name: 'L-Series (Turbo)',
+    description: 'Modern turbocharged engines providing efficiency and performance',
+    engines: [
+      { code: 'L15B7', power: '174-205 hp', years: '2016-present', notes: '1.5T Civic/Si' },
+    ]
+  },
+  {
+    name: 'R-Series',
+    description: 'Modern i-VTEC economy engines for 8th and 9th gen Civics',
+    engines: [
+      { code: 'R18A1', power: '140 hp', years: '2006-2011', notes: 'Civic base models' },
+      { code: 'R18Z1', power: '140 hp', years: '2012-2015', notes: 'Civic base models' },
+    ]
+  },
+];
+---
+
+<BaseLayout 
+  title="Honda Civic Engines" 
+  description="Complete specifications for Honda Civic engines including K-series, B-series, D-series and more."
+>
+  <!-- Hero -->
+  <section class="bg-honda-dark text-white py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="font-heading font-black text-4xl md:text-5xl mb-4">Engine Reference</h1>
+      <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+        From legendary B-series VTEC to modern turbocharged K-series, explore every engine 
+        that has powered the Honda Civic.
+      </p>
+    </div>
+  </section>
+
+  <!-- Engine Series -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      {engineSeries.map(series => (
+        <div class="mb-16" id={series.name.toLowerCase().replace('-', '')}>
+          <div class="flex items-center gap-4 mb-6">
+            <h2 class="font-heading font-bold text-2xl md:text-3xl">{series.name}</h2>
+            <div class="flex-1 h-px bg-gray-200 dark:bg-gray-700"></div>
+          </div>
+          <p class="text-gray-600 dark:text-gray-400 mb-6">{series.description}</p>
+          
+          <div class="overflow-x-auto">
+            <table class="w-full">
+              <thead>
+                <tr class="border-b border-gray-200 dark:border-gray-700">
+                  <th class="text-left py-3 px-4 font-semibold">Engine Code</th>
+                  <th class="text-left py-3 px-4 font-semibold">Power</th>
+                  <th class="text-left py-3 px-4 font-semibold hidden sm:table-cell">Years</th>
+                  <th class="text-left py-3 px-4 font-semibold">Application</th>
+                </tr>
+              </thead>
+              <tbody>
+                {series.engines.map((engine, i) => (
+                  <tr class:list={[
+                    "border-b border-gray-100 dark:border-gray-800",
+                    i % 2 === 0 ? "bg-gray-50 dark:bg-honda-gray/50" : ""
+                  ]}>
+                    <td class="py-3 px-4">
+                      <span class="font-mono font-medium text-primary">{engine.code}</span>
+                    </td>
+                    <td class="py-3 px-4 font-medium">{engine.power}</td>
+                    <td class="py-3 px-4 hidden sm:table-cell text-gray-500 dark:text-gray-400">{engine.years}</td>
+                    <td class="py-3 px-4 text-sm">{engine.notes}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Quick Links -->
+  <section class="py-16 bg-gray-100 dark:bg-honda-gray">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-heading font-bold text-2xl mb-6">Popular Topics</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a 
+          href="/guides/vtec-explained/" 
+          class="bg-white dark:bg-honda-dark px-6 py-3 rounded-lg shadow-sm hover:shadow-md transition"
+        >
+          How VTEC Works
+        </a>
+        <a 
+          href="/guides/" 
+          class="bg-white dark:bg-honda-dark px-6 py-3 rounded-lg shadow-sm hover:shadow-md transition"
+        >
+          Engine Swap Guides
+        </a>
+        <a 
+          href="/type-r/" 
+          class="bg-white dark:bg-honda-dark px-6 py-3 rounded-lg shadow-sm hover:shadow-md transition"
+        >
+          Type R Engines
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
