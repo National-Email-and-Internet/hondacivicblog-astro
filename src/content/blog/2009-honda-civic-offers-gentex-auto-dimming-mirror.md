@@ -25,4 +25,3 @@ Other Auto-dimming mirrors are from :
 
 - A nice &#8216;generic' one from CIPA that mounts onto  onto both domestic wedge bases and foreign camlock bases
 
-![Reblog this post [with Zemanta]](http://img.zemanta.com/reblog_e.png?x-id=10a41960-6f8b-4242-86fd-ebbdd20bd292)

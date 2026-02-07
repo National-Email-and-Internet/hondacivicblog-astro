@@ -68,4 +68,3 @@ I don't know about you but this sounds like a mod for anybody!
 
 Pass people, pass!
 
-![](http://img.zemanta.com/pixie.png?x-id=b383319f-eabc-41cd-b264-b3e1fd636361)

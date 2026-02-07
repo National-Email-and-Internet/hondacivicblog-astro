@@ -12,4 +12,3 @@ How cool is this [Honda Civic Si](http://en.wikipedia.org/wiki/Honda_Civic_Si) c
 
 This Civic commerical is a real creative twist and very well done, I applaud the team that did it – I wish more car commercials were like this!
 
-![](http://img.zemanta.com/pixie.png?x-id=ac21d17d-b80e-4fe3-aab9-90d0fbde4055)

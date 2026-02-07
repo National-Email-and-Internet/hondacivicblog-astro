@@ -129,4 +129,3 @@ A nice gallery of pictures is below
 
 - [Two new hybrids from Honda in 2009](http://reviews.cnet.com/8301-13746_7-9882557-48.html?part=rss&subj=news)
 
-![Reblog this post [with Zemanta]](http://img.zemanta.com/reblog_e.png?x-id=718e420d-06a6-4f73-b304-45e6d9f65649)

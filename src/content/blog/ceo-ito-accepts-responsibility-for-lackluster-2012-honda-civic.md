@@ -19,7 +19,4 @@ Honda creative director Yoshinori Asahi was recently quoted as saying," In the p
 
 Honda is hinting at a dramatic change for mid-cycle in 2013. A near complete redesign was scheduled for 2014, but sales for the Civic are so low and complaints so common that Honda has bumped that up a year. American Honda President John Mendel said that the company has been " appropriately energized" to update and revamp the Civic.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Honda_Civic_Type_R_%282017%29_1X7A0088.jpg/640px-Honda_Civic_Type_R_%282017%29_1X7A0088.jpg)
-*1973 Honda Civic RS*
-
 The 2012 Honda Civic is being further crippled by its competitors. Ford, Chevrolet, Hyundai, and Kia have all released cars in direct competition with the Civic, but their offerings include updated tech features and, in some cases, better fuel economy. Given the current market, Honda needs to get something done quickly or the iconic Civic may need to be shelved.

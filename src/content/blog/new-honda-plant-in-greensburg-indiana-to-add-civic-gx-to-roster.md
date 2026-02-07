@@ -34,4 +34,3 @@ Honda's most environmentally friendly model, the GX Civic uses no gasoline and p
 
 - [Honda Hires as Big Three Crash](http://abcnews.go.com/Business/story?id=6281315&page=1) (abcnews.go.com)
 
-![Reblog this post [with Zemanta]](http://img.zemanta.com/reblog_e.png?x-id=df3938a8-2b36-4c9d-8e8a-35d77259e3f3)

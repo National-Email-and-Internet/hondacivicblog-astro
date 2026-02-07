@@ -21,4 +21,3 @@ It is hard to go wrong with the 2000 Honda Civic Coupe Si, a sturdy little car t
 
 The bottom line is that when you are looking to purchase a used car, it is hard to beat the quality, lasting performance, and reliability of a Civic – unless the competition is the equally as worthwhile Honda Accord.
 
-![](http://img.zemanta.com/pixy.gif)

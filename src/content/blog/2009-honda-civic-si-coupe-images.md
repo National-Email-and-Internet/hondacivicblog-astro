@@ -116,4 +116,3 @@ On the performance front the 2009 Honda Civic Si Coupe is available with the 19
 
 To top it all off, the 2009 Civic Si delivers pretty decent gas mileage for essentially a performance vehicle getting 21 city/29 highway/24 combined mpg.
 
-![Reblog this post [with Zemanta]](http://img.zemanta.com/reblog_e.png?x-id=154ae86a-d142-4dad-99c1-a0d62ecd37e9)

@@ -8,12 +8,6 @@ tags: ["flaw","news","recal","swindon","uk"]
 featuredImage: null
 ---
 
-![2006 Honda Accord photographed in USA. Category:Honda Accord (2002, North America)](http://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Honda_Accord-sedan.jpg/202px-Honda_Accord-sedan.jpg)
-
-2006 Honda Civic
-
-Image via [Wikipedia](http://commons.wikipedia.org/wiki/Image:Honda_Accord-sedan.jpg)
-
 According to the [BBC](http://news.bbc.co.uk/1/hi/business/7312427.stm) a flaw in the handbrake mechanism of the 2006-2007 Civic manufactured in [Swindon](http://maps.google.com/maps?ll=51.558333,-1.7811111&spn=0.1,0.1&q=51.558333,-1.7811111&t=h), UK has caused the company to send notifications to all 63,000 owners to alert them of the problem. This is the second warning sent out from Honda regarding the faulty Handbrake problem on the Civic with the initial warning going out in the fourth quarter of 2007.
 
 In a nutshell, the problem lies inside the handbrake assembly and a key &#8216;spring' was mounted backwards. The problem manifests itself such that if the handbrake is applied while holding down the release button (no ratcheting) it has a high propensity to NOT engage properly. 29 complaints from owners prompted the notifications.
@@ -74,4 +68,3 @@ Here is a copy of the actual notice sent to owners:
 
 from: http://www.civinfo.com/forum/bugs-faults-irritations/9942-handbrake-self-release-inc-recall-letter-3.html#post124914
 
-![](http://img.zemanta.com/pixie.png?x-id=55a461d9-b525-432c-9ac3-78b8ca08386d)

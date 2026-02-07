@@ -21,4 +21,3 @@ Related articles
 
 - [DIY G-Force Meter: Let The Pissing Contest Begin [Gadgets]](http://jalopnik.com/384746/diy-g+force-meter-let-the-pissing-contest-begin)
 
-![](http://img.zemanta.com/pixie.png?x-id=b3494e26-d07b-4001-9882-7cf22e25e37d)
