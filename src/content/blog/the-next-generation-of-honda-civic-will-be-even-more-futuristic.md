@@ -12,7 +12,7 @@ As the time passes the faithful adepts of the Civic model are watching closely t
 
 The new model of Honda Civic of the new generation which is scheduled to debut in a year or two will be more compact and will have an even more futuristic design than the previous model. This is the prognosis of the executive director of Honda Tzuneo Tanai as expressed in his interview to Automotive News.
 
-![civic 1](http://www.harostreetmedia.net/hondacivicblog/wp-content/uploads/sites/6/2009/12/civic-1-300x171.jpg)
+![civic 1](/images/wp-uploads/2009/12/civic-1-150x150.jpg)
 
 According to Tzuneo, the initial plan was that Civic was to be larger and more expensive than its predecessor, however after the thorough analysis of prognosis of prices for oil products, rolled metal products and other types of raw materials the decision was made to bring modifications to the project. Now the new model is aimed to become more compact, lighter and more fuel efficient. Besides that, the new Honda Civic platform will be initially adopted for the use of a hybrid power-train.
 

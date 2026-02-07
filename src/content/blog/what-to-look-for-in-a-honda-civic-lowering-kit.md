@@ -8,7 +8,7 @@ tags: ["honda-civic","honda-civic-lowering-kit","performance"]
 featuredImage: null
 ---
 
-![](http://www.harostreetmedia.net/hondacivicblog/wp-content/uploads/sites/6/2011/07/2012Civic3-300x199.jpg)
+![](/images/wp-uploads/2011/07/2012Civic3-150x150.jpg)
 *2012 Honda Civic*
 
 The [Honda Civic](http://hondacivicblog.com/archives/civic-type-r-performance-for-the-budget-minded-schumachers) has long been a a great project car for tuning. There are many places that you could start your project, but a lowering kit offers enhanced performance in handling and fuel efficiency. Unfortunately, not all Honda Civic lowering kits are created equally. Buying the wrong kit can have the disappointing effect of decreasing your car's performance. Here are is the main point to look for in any kit before you purchase one.
