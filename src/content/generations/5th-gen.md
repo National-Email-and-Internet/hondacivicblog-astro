@@ -4,7 +4,7 @@ slug: "5th-gen-1992-1995"
 generation: 5
 years: "1992-1995"
 description: "The EG Civic perfected the sport compact formula with legendary VTEC engines and timeless styling."
-image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/1992-1995_Honda_Civic_hatchback_%28US%29.jpg/640px-1992-1995_Honda_Civic_hatchback_%28US%29.jpg"
+image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Honda_Civic_5th_generation_hatchback_%28front%29.jpg/640px-Honda_Civic_5th_generation_hatchback_%28front%29.jpg"
 highlights:
   - "VTEC engines available in North America"
   - "Iconic 'bubble' styling"
@@ -17,7 +17,7 @@ engines:
 pubDate: 2008-03-30
 ---
 
-![Fifth Gen Civic](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/1992-1995_Honda_Civic_hatchback_%28US%29.jpg/640px-1992-1995_Honda_Civic_hatchback_%28US%29.jpg)
+![Fifth Gen Civic](https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Honda_Civic_5th_generation_hatchback_%28front%29.jpg/640px-Honda_Civic_5th_generation_hatchback_%28front%29.jpg)
 
 The fifth generation Honda Civic (EG chassis) is widely regarded as one of the greatest sport compacts ever made. Its combination of lightweight construction, available VTEC power, and excellent chassis dynamics made it an instant legend.
 

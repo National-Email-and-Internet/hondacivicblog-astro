@@ -4,7 +4,7 @@ slug: "7th-gen-2001-2005"
 generation: 7
 years: "2001-2005"
 description: "A complete redesign brought MacPherson strut suspension, K-series engines, and the EP3 Civic Si."
-image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/2001-2003_Honda_Civic_%28seventh_generation%2C_pre-facelift%29.jpg/640px-2001-2003_Honda_Civic_%28seventh_generation%2C_pre-facelift%29.jpg"
+image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/CivicHonda2005.jpg/640px-CivicHonda2005.jpg"
 highlights:
   - "New K-series engines debut"
   - "EP3 Si hatchback with K20A3"
@@ -18,7 +18,7 @@ engines:
 pubDate: 2008-03-30
 ---
 
-![Seventh Gen Civic](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/2001-2003_Honda_Civic_%28seventh_generation%2C_pre-facelift%29.jpg/640px-2001-2003_Honda_Civic_%28seventh_generation%2C_pre-facelift%29.jpg)
+![Seventh Gen Civic](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/CivicHonda2005.jpg/640px-CivicHonda2005.jpg)
 
 The seventh generation Honda Civic represented a significant departure from previous generations. A completely new platform brought K-series engines, revised suspension, and a new design direction.
 

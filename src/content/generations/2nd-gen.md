@@ -4,7 +4,7 @@ slug: "2nd-gen-1980-1983"
 generation: 2
 years: "1980-1983"
 description: "The second generation Civic grew larger and more refined, setting new standards for compact cars."
-image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Honda_Civic_SL_1980.jpg/640px-Honda_Civic_SL_1980.jpg"
+image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Honda_Civic_2nd_generation-1.jpg/640px-Honda_Civic_2nd_generation-1.jpg"
 highlights:
   - "Larger and more spacious than first gen"
   - "Improved CVCC engine technology"
@@ -16,7 +16,7 @@ engines:
 pubDate: 2008-03-30
 ---
 
-![Second Gen Civic](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Honda_Civic_SL_1980.jpg/640px-Honda_Civic_SL_1980.jpg)
+![Second Gen Civic](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Honda_Civic_2nd_generation-1.jpg/640px-Honda_Civic_2nd_generation-1.jpg)
 
 The second generation Honda Civic was introduced in 1979 and represented a significant step forward in size, refinement, and features. Building on the success of the original, Honda created a more mature and capable compact car.
 

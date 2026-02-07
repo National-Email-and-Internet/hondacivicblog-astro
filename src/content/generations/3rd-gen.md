@@ -4,7 +4,7 @@ slug: "3rd-gen-1984-1987"
 generation: 3
 years: "1984-1987"
 description: "The 'Wonder Civic' revolutionized compact car design with its wedge shape and innovative packaging."
-image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/1985_Honda_Civic_1.5_GL_%28front%29.jpg/640px-1985_Honda_Civic_1.5_GL_%28front%29.jpg"
+image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Honda_Civic_3rd_generation-1.jpg/640px-Honda_Civic_3rd_generation-1.jpg"
 highlights:
   - "Revolutionary wedge-shaped design"
   - "Introduced Honda CRX sport compact"
@@ -16,7 +16,7 @@ engines:
 pubDate: 2008-03-30
 ---
 
-![Third Gen Civic](https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/1985_Honda_Civic_1.5_GL_%28front%29.jpg/640px-1985_Honda_Civic_1.5_GL_%28front%29.jpg)
+![Third Gen Civic](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Honda_Civic_3rd_generation-1.jpg/640px-Honda_Civic_3rd_generation-1.jpg)
 
 The third generation Honda Civic, known as the "Wonder Civic" in Japan, debuted in 1983 and represented a complete reimagining of what a compact car could be. Its revolutionary design and engineering won multiple Car of the Year awards worldwide.
 

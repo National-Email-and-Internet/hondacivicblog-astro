@@ -4,7 +4,7 @@ slug: "4th-gen-1988-1991"
 generation: 4
 years: "1988-1991"
 description: "The EF Civic brought double-wishbone suspension and became a tuner favorite with legendary handling."
-image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/1990_Honda_Civic_1.6i-16_automatic_5-door_%28EC%29%2C_front_12.22.19.jpg/640px-1990_Honda_Civic_1.6i-16_automatic_5-door_%28EC%29%2C_front_12.22.19.jpg"
+image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Honda_Civic_4th_generation-1.jpg/640px-Honda_Civic_4th_generation-1.jpg"
 highlights:
   - "Double-wishbone suspension all around"
   - "B16A VTEC engine introduced (JDM)"
@@ -17,7 +17,7 @@ engines:
 pubDate: 2008-03-30
 ---
 
-![Fourth Gen Civic](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/1990_Honda_Civic_1.6i-16_automatic_5-door_%28EC%29%2C_front_12.22.19.jpg/640px-1990_Honda_Civic_1.6i-16_automatic_5-door_%28EC%29%2C_front_12.22.19.jpg)
+![Fourth Gen Civic](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Honda_Civic_4th_generation-1.jpg/640px-Honda_Civic_4th_generation-1.jpg)
 
 The fourth generation Honda Civic (EF chassis) introduced groundbreaking suspension technology and became one of the most beloved platforms in Honda history. Known as the "Grand Civic" in Japan, this generation established the Civic's reputation for exceptional handling.
 
