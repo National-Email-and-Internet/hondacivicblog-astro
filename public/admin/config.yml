@@ -1,0 +1,69 @@
+backend:
+  name: github
+  repo: National-Email-and-Internet/hondacivicblog-astro
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Publish Date", name: "pubDate", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Featured Image", name: "featuredImage", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "generations"
+    label: "Civic Generations"
+    folder: "src/content/generations"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Years", name: "years", widget: "string"}
+      - {label: "Order", name: "order", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "engines"
+    label: "Engines"
+    folder: "src/content/engines"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "guides"
+    label: "Guides"
+    folder: "src/content/guides"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "pages"
+    label: "Pages"
+    folder: "src/content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
