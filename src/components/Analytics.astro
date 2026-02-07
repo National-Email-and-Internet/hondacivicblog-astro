@@ -1,13 +1,13 @@
 ---
-// Google Analytics / Google Tag Manager
-const gtmId = 'GT-WR4QNRP';
+// Google Analytics 4
+const ga4Id = 'G-TSE04E4LGH';
 ---
 
 <!-- Google tag (gtag.js) -->
-<script async src={`https://www.googletagmanager.com/gtag/js?id=${gtmId}`}></script>
-<script is:inline define:vars={{ gtmId }}>
+<script async src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`}></script>
+<script is:inline define:vars={{ ga4Id }}>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', gtmId);
+  gtag('config', ga4Id);
 </script>
