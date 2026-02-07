@@ -49,9 +49,10 @@ const formattedDate = post.data.pubDate.toLocaleDateString('en-US', {
           {post.data.title}
         </h1>
         
+        <!-- Date hidden for legacy content -->
         <time 
           datetime={post.data.pubDate.toISOString()}
-          class="text-gray-400"
+          class="sr-only"
         >
           {formattedDate}
         </time>
