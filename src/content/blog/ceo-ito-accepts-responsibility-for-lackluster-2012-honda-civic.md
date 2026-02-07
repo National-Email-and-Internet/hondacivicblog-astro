@@ -5,7 +5,7 @@ pubDate: "2011-12-04T10:12:35"
 description: "The 2012 Honda Civic has been far from a critical or sales success. Critics express their displeasure with words and buyers have been expressing their displeasu"
 categories: ["cars","news","uncategorized"]
 tags: ["2012-honda-civic"]
-featuredImage: null
+featuredImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/2012_Honda_Civic_EX_sedan.jpg/640px-2012_Honda_Civic_EX_sedan.jpg"
 ---
 
 ![](http://hondacivicblog.com/wp-content/uploads/2011/07/2012Civic3-300x200.jpg)

@@ -5,7 +5,7 @@ pubDate: "2011-11-27T19:18:21"
 description: "If you have been shopping for a late model used Honda Civic, you have probably been wondering why the prices seem a bit higher than you might expect. Several fa"
 categories: ["projects","uncategorized"]
 tags: []
-featuredImage: null
+featuredImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/2010_Honda_Civic_Type_R_Mugen_I-VTEC.jpg/640px-2010_Honda_Civic_Type_R_Mugen_I-VTEC.jpg"
 ---
 
 ![2010 Honda Civic](http://hondacivicblog.com/wp-content/uploads/2009/11/civic-4door-front-quarter-300x200.jpeg)

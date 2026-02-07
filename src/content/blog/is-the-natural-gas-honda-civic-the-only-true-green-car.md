@@ -5,7 +5,7 @@ pubDate: "2011-12-11T20:03:04"
 description: "One of the least known Honda Civic alternative fuel vehicles is the Compressed Natural Gas(CNG) vehicle. Environmentalists are all smiling about their hybrids a"
 categories: ["cars","news","uncategorized"]
 tags: ["compressed-natural-gas-vehicle","honda-civic","honda-civic-cng"]
-featuredImage: null
+featuredImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/1999_Honda_Civic_GX_front_quarter.jpg/640px-1999_Honda_Civic_GX_front_quarter.jpg"
 ---
 
 ![](http://hondacivicblog.com/wp-content/uploads/2011/07/2012Civic3-300x200.jpg)
