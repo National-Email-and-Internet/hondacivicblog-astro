@@ -16,7 +16,7 @@ Here are some cool shots of the new 2009 [Honda Civic Si](http://en.wikipedia.or
 
 			
 				
-![](https://hondacivicblog.com/wp-content/uploads/2008/09/back-150x150.jpg)
+
 
 			
 				
@@ -25,7 +25,7 @@ Here are some cool shots of the new 2009 [Honda Civic Si](http://en.wikipedia.or
 
 			
 				
-![](https://hondacivicblog.com/wp-content/uploads/2008/09/front-left-quarter-150x150.jpg)
+
 
 			
 				
@@ -34,7 +34,7 @@ Here are some cool shots of the new 2009 [Honda Civic Si](http://en.wikipedia.or
 
 			
 				
-![](https://hondacivicblog.com/wp-content/uploads/2008/09/front-150x150.jpg)
+
 
 			
 				
@@ -43,7 +43,7 @@ Here are some cool shots of the new 2009 [Honda Civic Si](http://en.wikipedia.or
 
 			
 				
-![](https://hondacivicblog.com/wp-content/uploads/2008/09/new-wheel-150x150.jpg)
+
 
 			
 				
@@ -52,7 +52,7 @@ Here are some cool shots of the new 2009 [Honda Civic Si](http://en.wikipedia.or
 
 			
 				
-![](https://hondacivicblog.com/wp-content/uploads/2008/09/rear-right-quarter-150x150.jpg)
+
 
 			
 				
@@ -61,7 +61,7 @@ Here are some cool shots of the new 2009 [Honda Civic Si](http://en.wikipedia.or
 
 			
 				
-![](https://hondacivicblog.com/wp-content/uploads/2008/09/side-left-150x150.jpg)
+
 
 			
 				
@@ -70,43 +70,43 @@ Here are some cool shots of the new 2009 [Honda Civic Si](http://en.wikipedia.or
 
 			
 				
-![](https://hondacivicblog.com/wp-content/uploads/2008/09/interior-gauges-150x150.jpg)
+
 
 			
 
 			
 				
-![](https://hondacivicblog.com/wp-content/uploads/2008/09/interior-moonroof-150x150.jpg)
+
 
 			
 
 			
 				
-![](https://hondacivicblog.com/wp-content/uploads/2008/09/interior-navigation-150x150.jpg)
+
 
 			
 
 			
 				
-![](https://hondacivicblog.com/wp-content/uploads/2008/09/interior-rear-150x150.jpg)
+
 
 			
 
 			
 				
-![](https://hondacivicblog.com/wp-content/uploads/2008/09/interior-steering-controls-150x150.jpg)
+
 
 			
 
 			
 				
-![](https://hondacivicblog.com/wp-content/uploads/2008/09/interior-stereo-150x150.jpg)
+
 
 			
 
 			
 				
-![](https://hondacivicblog.com/wp-content/uploads/2008/09/interior-stick-150x150.jpg)
+
 
 			
 

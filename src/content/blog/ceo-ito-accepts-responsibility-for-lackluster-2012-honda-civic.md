@@ -8,7 +8,7 @@ tags: ["2012-honda-civic"]
 featuredImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/2012_Honda_Civic_EX_sedan.jpg/640px-2012_Honda_Civic_EX_sedan.jpg"
 ---
 
-![](http://hondacivicblog.com/wp-content/uploads/2011/07/2012Civic3-300x200.jpg)
+
 *2012 Honda Civic*
 
 The [2012 Honda Civic](http://hondacivicblog.com/archives/2012-civic-finds-itself-in-a-different-world) has been far from a critical or sales success. Critics express their displeasure with words and buyers have been expressing their displeasure by not buying Civics. During an interview at the Tokyo Motor Show, Honda CEO Takanobu Ito accepted responsibility for the poor performance of the Civic and vowed that his company would improve the car in the very near future.
