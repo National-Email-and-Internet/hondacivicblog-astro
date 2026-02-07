@@ -28,6 +28,6 @@ An excellent first look at the 2009 Honda Fit – while, the full details haven
 
 It is no Civic but, for the cost and environment conscious, the soon to be released 2009 Honda Fit looks like a nice choice! I am sure it won't be long at all before there is a myriad of high  performance honda accessories available either!
 
+![Sporty little honda!](http://www.harostreetmedia.net/hondacivicblog/wp-content/uploads/sites/6/2008/04/2009_honda_fit-300x186.jpg)
 
-
-
+![](http://www.harostreetmedia.net/hondacivicblog/wp-content/uploads/sites/6/2008/04/02_tokyo-47-1-300x225.jpg)
