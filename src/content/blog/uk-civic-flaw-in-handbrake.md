@@ -12,7 +12,7 @@ According to the [BBC](http://news.bbc.co.uk/1/hi/business/7312427.stm) a flaw i
 
 In a nutshell, the problem lies inside the handbrake assembly and a key &#8216;spring' was mounted backwards. The problem manifests itself such that if the handbrake is applied while holding down the release button (no ratcheting) it has a high propensity to NOT engage properly. 29 complaints from owners prompted the notifications.
 
-![](/images/2008-06-handbrake2-300x225.jpg)
+![](/images/2008-06-handbrake2.jpg)
 
 (image from paultan.org)
 
@@ -64,7 +64,7 @@ Official Bulletin from Honda to dealers about the issue:
 
 Here is a copy of the actual notice sent to owners:
 
-![](/images/2008-06-handbrake-198x300.jpg)
+![](/images/2008-06-handbrake.jpg)
 
 from: http://www.civinfo.com/forum/bugs-faults-irritations/9942-handbrake-self-release-inc-recall-letter-3.html#post124914
 

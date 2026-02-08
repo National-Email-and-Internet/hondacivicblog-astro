@@ -23,7 +23,7 @@ A nice gallery of pictures is below
 
 			
 				
-![](/images/2008-09-exterior-front-left-quarter-150x150.jpg)
+![](/images/2008-09-exterior-front-left-quarter.jpg)
 
 			
 
@@ -41,79 +41,79 @@ A nice gallery of pictures is below
 
 			
 				
-![](/images/2008-09-exterior-mirror-150x150.jpg)
+![](/images/2008-09-exterior-mirror.jpg)
 
 			
 
 			
 				
-![](/images/2008-09-exterior-rear-right-quarter-150x150.jpg)
+![](/images/2008-09-exterior-rear-right-quarter.jpg)
 
 			
 
 			
 				
-![](/images/2008-09-exterior-rear-150x150.jpg)
+![](/images/2008-09-exterior-rear.jpg)
 
 			
 
 			
 				
-![](/images/2008-09-exterior-side-150x150.jpg)
+![](/images/2008-09-exterior-side.jpg)
 
 			
 
 			
 				
-![](/images/2008-09-exterior-taillight-150x150.jpg)
+![](/images/2008-09-exterior-taillight.jpg)
 
 			
 
 			
 				
-![](/images/2008-09-exterior-wheel-150x150.jpg)
+![](/images/2008-09-exterior-wheel.jpg)
 
 			
 
 			
 				
-![](/images/2008-09-front-action-150x150.jpg)
+![](/images/2008-09-front-action.jpg)
 
 			
 
 			
 				
-![](/images/2008-09-interior-console-150x150.jpg)
+![](/images/2008-09-interior-console.jpg)
 
 			
 
 			
 				
-![](/images/2008-09-interior-front-150x150.jpg)
+![](/images/2008-09-interior-front.jpg)
 
 			
 
 			
 				
-![](/images/2008-09-interior-rear1-150x150.jpg)
+![](/images/2008-09-interior-rear1.jpg)
 
 			
 
 			
 				
-![](/images/2008-09-interior-speedo-150x150.jpg)
+![](/images/2008-09-interior-speedo.jpg)
 
 			
 
 			
 				
-![](/images/2008-09-interior-steering-controls1-150x150.jpg)
+![](/images/2008-09-interior-steering-controls1.jpg)
 
 			
 
 			
 				
-![](/images/2008-09-interior-usb-150x150.jpg)
+![](/images/2008-09-interior-usb.jpg)
 
 			
 

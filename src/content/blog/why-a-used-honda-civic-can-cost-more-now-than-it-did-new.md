@@ -8,7 +8,7 @@ tags: []
 featuredImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/2010_Honda_Civic_Type_R_Mugen_I-VTEC.jpg/640px-2010_Honda_Civic_Type_R_Mugen_I-VTEC.jpg"
 ---
 
-![2010 Honda Civic](/images/2009-11-civic-4door-front-quarter-300x200.jpeg)
+![2010 Honda Civic](/images/2009-11-civic-4door-front-quarter.jpeg)
 If you have been shopping for a late model used Honda Civic, you have probably been wondering why the prices seem a bit higher than you might expect. Several factors, dating back to 2008, have compiled to keep the resale value of several Honda offerings, especially the Civic, at record levels. Some are still able to command close to their original MSRP.
 
 The first factor was the economic downturn that began in 2008. Potential buyers found themselves needing to hold on to their cars longer due to job loss or being afraid of a layoff. That slowly led to an absence of quality used cars on dealer's lots. The trend of holding onto cars continued through late 2010.

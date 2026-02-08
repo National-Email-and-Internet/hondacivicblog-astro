@@ -8,7 +8,7 @@ tags: ["2012-honda-civic","improve-fuel-efficiency"]
 featuredImage: null
 ---
 
-![](/images/2011-07-2012Civic1-300x200.jpg)
+![](/images/2011-07-2012Civic1.jpg)
 *2012 Honda Civic*
 
 The fuel efficiency of the [2012 Honda Civic](http://hondacivicblog.com/archives/2012-civic-finds-itself-in-a-different-world) is at the top of its class. While detractors have said many things about the Civic, its mpg rating has never been an issue. Still, it can be improved with a few relatively inexpensive items. Here are three aftermarket parts that will help you stretch your fuel dollar.
