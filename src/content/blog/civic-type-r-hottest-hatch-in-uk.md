@@ -8,7 +8,6 @@ tags: []
 featuredImage: null
 ---
 
-![Honda Civic Type R](http://www.zercustoms.com/news/images/Honda-Civic-Type-R-Hottest-Hatch-UK-b.jpg)
 Honda announced today that the Honda Civic Type R is the hottest hatch in UK. The new version of the Honda Civic Type R was launched in March last year and February this year it has been sold in 5,192 units. This makes it Britain's most popular hot hatch. In comparison, the Focus ST (all variants) was sold in 4,778 units.
 
 * Honda Press Release:*
