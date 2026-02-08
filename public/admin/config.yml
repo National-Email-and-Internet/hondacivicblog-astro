@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: National-Email-and-Internet/hondacivicblog-astro
-  branch: main
+  branch: master
   base_url: https://oauth.natinternet.com
 
 media_folder: "public/images"
