@@ -8,7 +8,7 @@ tags: ["2009-honda-civic","auto-dimming-mirror","gentex-corporation","parts"]
 featuredImage: null
 ---
 
-![](/images/wp-uploads/2008/09/gentex-mirror.jpg)
+![](/images/2008-09-gentex-mirror.jpg)
 According to [Gentex Corporation](http://en.wikipedia.org/wiki/Gentex_Corporation), their auto-dimming mirrors are now available as an option on all 2009 Honda Civic trim levels sold in European Union countries.
 
 > 

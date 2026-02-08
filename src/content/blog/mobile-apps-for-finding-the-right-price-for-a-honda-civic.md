@@ -8,7 +8,7 @@ tags: ["honda-civic","honda-civic-price","mobile-apps","price-of-honda-civic"]
 featuredImage: null
 ---
 
-![](/images/wp-uploads/2011/07/2012Civic3-300x200.jpg)
+![](/images/2011-07-2012Civic3-300x200.jpg)
 *2012 Honda Civic*
 
 In today's reality of smartphones and on-the-go living, thousands of people are using a mobile app every minute of every day. When you are car shopping, it is essential to know the correct value of the car that you are considering before signing any deal. The logical combination of the two is a mobile app to help you find the right price for a Honda Civic or any other vehicle. Here are three auto value mobile apps compared apples to apples.

@@ -23,97 +23,97 @@ A nice gallery of pictures is below
 
 			
 				
-![](/images/wp-uploads/2008/09/exterior-front-left-quarter-150x150.jpg)
+![](/images/2008-09-exterior-front-left-quarter-150x150.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/exterior-front.jpg)
+![](/images/2008-09-exterior-front.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/exterior-headlight.jpg)
+![](/images/2008-09-exterior-headlight.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/exterior-mirror-150x150.jpg)
+![](/images/2008-09-exterior-mirror-150x150.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/exterior-rear-right-quarter-150x150.jpg)
+![](/images/2008-09-exterior-rear-right-quarter-150x150.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/exterior-rear-150x150.jpg)
+![](/images/2008-09-exterior-rear-150x150.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/exterior-side-150x150.jpg)
+![](/images/2008-09-exterior-side-150x150.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/exterior-taillight-150x150.jpg)
+![](/images/2008-09-exterior-taillight-150x150.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/exterior-wheel-150x150.jpg)
+![](/images/2008-09-exterior-wheel-150x150.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/front-action-150x150.jpg)
+![](/images/2008-09-front-action-150x150.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/interior-console-150x150.jpg)
+![](/images/2008-09-interior-console-150x150.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/interior-front-150x150.jpg)
+![](/images/2008-09-interior-front-150x150.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/interior-rear1-150x150.jpg)
+![](/images/2008-09-interior-rear1-150x150.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/interior-speedo-150x150.jpg)
+![](/images/2008-09-interior-speedo-150x150.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/interior-steering-controls1-150x150.jpg)
+![](/images/2008-09-interior-steering-controls1-150x150.jpg)
 
 			
 
 			
 				
-![](/images/wp-uploads/2008/09/interior-usb-150x150.jpg)
+![](/images/2008-09-interior-usb-150x150.jpg)
 
 			
 

@@ -8,7 +8,7 @@ tags: ["body-kits","carbon-fiber-hoods","honda-civic-parts","vertical-doors"]
 featuredImage: null
 ---
 
-![](/images/wp-uploads/2011/10/honda-civic-92-95-lambo-vertical-doors--300x225.jpg)
+![](/images/2011-10-honda-civic-92-95-lambo-vertical-doors--300x225.jpg)
 *Image credit: Vertical Doors, INC*
 
 The Honda Civic is one of the best known cars in North America. Styling may not set it apart from many cars, but its reputation for fuel efficiency, durability, and reliability have helped it stand out from most cars on the market today. It is also a favorite for tuners, backyard and professional alike. There are hundreds of Honda Civic parts that you can choose from to customize your car, but here are three that offer performance in several ways.

@@ -8,7 +8,7 @@ tags: []
 featuredImage: null
 ---
 
-![](/images/wp-uploads/2011/11/plugin_01-300x101.jpg)
+![](/images/2011-11-plugin_01-300x101.jpg)
 *Concept of Honda plug-in platform*
 
 Mid-2011 Honda CEO Takanobu Ito gave a glance into the company's strategy moving into the future. An all new Honda Civic hybrid was mentioned as well as a plug-in hybrid concept that would hopefully make it into production for the 2012 model year. Here is a quick glance at the most recent information about both.

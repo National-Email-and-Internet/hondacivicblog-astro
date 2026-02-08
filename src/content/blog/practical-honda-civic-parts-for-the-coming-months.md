@@ -8,7 +8,7 @@ tags: ["all-weather-floor-mats","cargo-liner","honda-civic","honda-civic-accesso
 featuredImage: null
 ---
 
-![](/images/wp-uploads/2011/10/all-weather-floor-mat.gif)
+![](/images/2011-10-all-weather-floor-mat.gif)
 *All weather floor mat*
 
 The inexorable march of the seasons is upon us. Winter is breathing down the necks of people everywhere. That means white powder everywhere. It also means slush, road salt, and general wet nastiness in your Honda Civic. All of it can destroy an interior over time unless you add a few practical accessories to [protect your ride](http://hondacivicblog.com/archives/winter-car-tips).
