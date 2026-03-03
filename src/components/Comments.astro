@@ -17,7 +17,8 @@ const pageUrl = Astro.url.href;
 </section>
 
 <script define:vars={{ pageUrl }}>
-  var remark_config = {
+  // Must be global for Remark42 embed.js
+  window.remark_config = {
     host: "https://comments.natinternet.com",
     site_id: "hondacivicblog",
     url: pageUrl,
